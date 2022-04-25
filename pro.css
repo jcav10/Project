@@ -1,0 +1,323 @@
+/*DEVELOPER: Johanson Caverly, IS117-004, Spring 2022, Year 2022*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width:800px;
+    margin:0px auto 0px auto;
+    border: 3px solid #931420;
+    background-color:white;
+}
+
+html{
+	background-color: White;
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+    padding: 0px 30px 0px 30px;
+}
+
+header {
+	border-bottom:5px solid #931420;
+	padding: 2em 0em 2em 0em;
+	background: yellow
+        ;
+}
+header h2 {
+	font-size: 170%;
+	color:#800000;
+	
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	
+}
+header img {
+	height: 80px;
+	float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+    padding: 0px 30px 0px 30px;
+}
+main h1{
+	font-size: 150%;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    box-shadow: inset 0 0 0 4px #eee;
+  	border-style:double #f06d06;
+  	border-radius: 30px;
+    
+}
+main h2{
+	font-size: 130%;
+	color:gray;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+main h3{
+	font-size: 105%;
+    padding-bottom: .75em;
+}
+main a:hover{
+    font-style: italic;
+}
+
+.shadow{
+	 text-shadow: 2px 2px #800000;
+}
+main image {
+    padding-bottom: 1em;
+
+}
+main p {
+    padding-bottom: .5em;
+}
+main q{
+    padding-right: 2em;
+    padding-left: 2em;
+    font-style: italic;
+}
+ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+li {
+    padding-bottom: .35em;
+}
+a:hover, a:focus {
+    font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+	text-align: center;
+    border-top: 3px solid #931420;
+    background-color: gray;
+    color: white;  
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+
+
+article p {
+    padding: 0;
+
+}
+section{
+    width: 550px;
+    float: right;
+    padding: 0 20px 20px 20px;
+}
+
+
+section h1{
+    font-size: 150%;
+    border-top: solid 3px #931420;
+    border-bottom: solid 3px #931420;
+    padding: .5em 0 .25em 0;
+    margin: 0;
+}
+section h2{
+	font-size: 130%;
+	color: #800000;
+    padding: .5em 0 0.25em 0;
+}
+
+article h3{
+	font-size: 105%;
+}
+
+article{
+    padding: .5em .5em;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+article h2{
+    font-size: 130%;
+    color: #800000;
+    padding-top: 0;
+}
+article h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+article img{
+    float: right;
+    padding: 0 0;
+    margin-top: .35em;
+    margin-bottom: .35em;
+    margin-left: .35em;
+    border: 1px solid black;
+}
+
+ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+ul li{
+	float: left;
+}
+
+li a{
+	display: block;
+	width:130px;
+	text-align: center;
+	padding:1em 0em 1em 0em;
+	text-decoration: none;
+	background-color: #800000;
+	color:white;
+	font-weight: bold;
+}
+.current{
+	color:yellow;
+}
+
+
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav li>a {
+  padding: 15px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+nav li>a:hover {
+  background: violet;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100px;
+  overflow: visible;
+  padding: 0;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul ul li {
+  background: green;
+  display: block;
+}
+nav ul ul li>a:hover {
+  color: red;
+}
+
+
+ #mobile_menu {
+	display: none;
+}
+
+
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                     
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;          
+		width: 95%;                    
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
